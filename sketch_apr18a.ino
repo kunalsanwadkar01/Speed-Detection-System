@@ -5,8 +5,6 @@
 
 
 String apiKey = "6QEEITXCA6F1HWDC";
-const char *ssid =  "Rushikesh";
-const char *pass =  "12345678";
 const char* server = "api.thingspeak.com";
 
 
@@ -43,8 +41,8 @@ void loop()
         while(digitalRead(sense2)!=1);
         time_for_speed= millis()- calibrate;
         while(digitalRead(sense2)!=0);
-        velocity= 216/time_for_speed;   // check note 1 comments below to see how 216 came here
-        active=1;                       // check note 2 comments below to understand the use of this variable
+        velocity= 216/time_for_speed;   
+        active=1;                       
     }
 
     if(active==1)
